@@ -20,8 +20,9 @@ numb = 0 # used to make list to a string
 more_then_two_slash = False # used to only allow one / to added
 text = str()
 
-auth = tweepy.OAuthHandler("lk3GqCqEF0rFSywsuEzfB18vm", "MnknitBP3NitnwBVbkfIBmeMePLpzfxs71E8bgEVj5CNvljL6i")
-auth.set_access_token("1238808634580140033-EQB5DQbKhgoPtWzqPA0CBFaMnVCExz", "angOh69hXyaAHUs1P0Wio6ZMl3hkovuY8ECALqvEt4x3f")
+#API KEYS go here!
+auth = tweepy.OAuthHandler("Twiiter API KEYS", "Twiiter API KEYS")
+auth.set_access_token("Twiiter API KEYS", "Twiiter API KEYS")
 api = tweepy.API(auth)
 
 def get_data():
@@ -45,8 +46,8 @@ class Price_Update(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f'{self} has connected to Discord!')
-        guild = self.bot.get_guild(751748296250490912)
-        member = guild.get_member(888151969187901440)
+        guild = self.bot.get_guild("Your Discord Sever ID")
+        member = guild.get_member("Discord Bot ID")
         await member.edit(nick="Fetching Price!")
         await asyncio.sleep(5)
         #Defines varibles we need
@@ -95,15 +96,15 @@ class Price_Update(commands.Cog):
                     #print(text)
                 if text == text:
                     print("I'm running")
-                    #member = bot.get_user(888151969187901440)
-                    guild = self.bot.get_guild(751748296250490912)
-                    member = guild.get_member(888151969187901440)
+                   
+                    guild = self.bot.get_guild(Your Discord Sever ID)
+                    member = guild.get_member("Discord Bot ID")
                     await member.edit(nick=text)
                     await asyncio.sleep(10)
                     
                     
             
-                    await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Cursed"))
+                    await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Mase by Cursed#2172"))
                     passed.clear()
                     #print("after clear",len(passed))
                     lock = False
