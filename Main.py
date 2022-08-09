@@ -35,4 +35,4 @@ for filename in os.listdir('./cogs'):
 
 
 
-bot.run("ODg4MTUxOTY5MTg3OTAxNDQw.YUOh-g.PJza_9JWbPqkazjC9y0F99MZaLc")
+bot.run("Discord Token here")
